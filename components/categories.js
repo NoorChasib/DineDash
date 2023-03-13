@@ -5,7 +5,6 @@ import client, { urlFor } from "../sanity";
 
 const Categories = () => {
 	const [categories, setCategories] = useState([]);
-	
 
 	useEffect(() => {
 		client
@@ -18,8 +17,6 @@ const Categories = () => {
 				setCategories(data);
 			});
 	}, []);
-
-	console.log("categories", categories)
 
 	return (
 		<ScrollView
